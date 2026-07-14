@@ -24,3 +24,4 @@ The supplied logo and three supplied images remain in the folder. Additional vis
 ## Store link
 All “Explore store”, “Shop collection” and footer store calls-to-action currently point to `https://buyhoreca.com`.
 "# Blue_Mountain" 
+"# Blue_Mountain" 
