@@ -1,28 +1,13 @@
-# Blue Mountain International — Saudi Arabia
+# Blue Mountain International — Product Gateway Website
 
-A responsive multi-page introduction site that sends customers to **BuyHoreca** for shopping.
+This final enhanced version starts from the approved clean design and adds product-led homepage content plus light, smooth interaction.
 
-## Pages
-- `index.html` — immersive home page
-- `about.html` — company story and company figures
-- `solutions.html` — hospitality supply categories
-- `contact.html` — Riyadh and Dubai details
-- `terms.html`, `privacy.html`, `order-policy.html`, `warranty-returns.html` — full legal-policy pages
+## Store destination
+All store buttons use the supplied Shopify preview gateway:
+https://mpileb2e040x8x76-73389474075.shopifypreview.com
 
 ## Run locally
-Open the folder in Antigravity, then run its local preview. Or, from a terminal in this folder:
+Open `index.html` in a browser, or publish the complete folder to GitHub Pages / your hosting.
 
-```bash
-python3 -m http.server 8000
-```
-
-Open `http://localhost:8000`.
-
-## Images
-The supplied logo and three supplied images remain in the folder. Additional visual photography is hosted through Unsplash links in the HTML, so it displays immediately online. To use your own photos later, replace the relevant image `src` values while keeping the image dimensions/crop styling intact.
-
-## Store link
-All “Explore store”, “Shop collection” and footer store calls-to-action currently point to `https://buyhoreca.com`.
-"# Blue_Mountain" 
-"# Blue_Mountain" 
-"# Blue_Mountain" 
+## Contents
+Home, Our Story, Solutions, Contact, Terms & Conditions, Privacy Policy, Order Policy, and Warranty & Returns.

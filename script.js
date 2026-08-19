@@ -14,3 +14,13 @@ if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
  hero?.addEventListener('pointerleave',()=>media.style.transform='');
  document.querySelectorAll('.use-card').forEach(card=>{card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;requestAnimationFrame(()=>card.style.setProperty('--card-shift',`${x*7}px ${y*7}px`))});card.addEventListener('pointerleave',()=>card.style.removeProperty('--card-shift'))});
 }
+
+// Gentle page and button feedback—visible, but intentionally never distracting.
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+ document.body.classList.add('page-enter');
+ document.querySelectorAll('.btn,.header-store').forEach(button=>button.addEventListener('click',event=>{
+   const pulse=document.createElement('i'), rect=button.getBoundingClientRect();
+   pulse.className='click-pulse'; pulse.style.left=`${event.clientX-rect.left}px`; pulse.style.top=`${event.clientY-rect.top}px`;
+   button.style.position='relative'; button.style.overflow='hidden'; button.appendChild(pulse); setTimeout(()=>pulse.remove(),650);
+ }));
+}
